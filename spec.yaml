@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+servers:
+- url: https://d5dlu0a1c8v8e26bm8r4.a6hc9vya.apigw.yandexcloud.net
+paths:
+  /for-recognizer-bot-function:
+    post:
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4eqmmqo6mg8n96kt180
+        service_account_id: ajedo4s1uf6ve4kcj6un
+      operationId: for-recognizer-bot-function
